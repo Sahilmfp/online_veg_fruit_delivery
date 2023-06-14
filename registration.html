@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Form</title>
+		
+			<style>
+			
+				.bg{
+						background:gray;
+						color:white;
+						height:auto;
+						margin-left:35%;
+						margin-right:35%;
+						margin-top:100px;
+						box-shadow:2px 2px 80px 2px skyblue;
+					
+				}
+				
+				.inp{
+					margin-left:100px;
+					margin-right:100px;
+									
+				}
+				
+			
+			</style>
+			<link href="../static/css/bootstrap.css" type="text/css" rel="stylesheet">
+			<link href="../static/css/bootstrap-reboot.css" type="text/css" rel="stylesheet">
+			<link href="../static/css/bootstrap-grid.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<fieldset class="bg">
+	<form method="POST">
+	{% csrf_token %}
+	<h2 align="center">Registration form</h2>
+	
+	<div class="form-group inp">
+	    <label> First Name :-</label>
+	    <input class="form-control" type="text" name="FirstName" placeholder="enter your  First name" required >
+	</div>
+	
+	<div class="form-group inp">
+	    <label>Last Name :-</label>
+	    <input class="form-control" type="text" name="LastName" placeholder=" enter your  Last Name" required >
+	</div>
+	<div class="form-group inp">
+	    <label>Number :-</label>
+	    <input class="form-control" type="text" name="Number" placeholder=" enter your Number" required >
+	</div>
+
+	<div class="form-group inp">
+	<label>Email:-</label>
+	<input  class="form-control" type="email" name="Email" placeholder="enter your Email" required>
+	</div>
+
+	<div class="form-group inp">
+	<label>Password :-</label>
+	<input  class="form-control" type="password" name="Password" placeholder="enter your Password" required>
+	</div>
+
+	
+
+	<!--<div class="form-group inp">
+	<label>Gender:-</label>
+	<input type="radio" name="Gender" value="male" required>Male
+	<input type="radio" name="Gender" value="Female" required>Female
+	<input type="radio" name="Gender" value="Other" required>Other
+	<div>-->
+	<br>
+	
+
+	<p style="text-align: center;" >
+	<button type="submit" value="REGISTER"> <span style="color: red;">REGISTER</span></button>
+	
+
+
+
+
+		</form>
+
+
+	  
+
+	  
+	</body>
+
+</html>

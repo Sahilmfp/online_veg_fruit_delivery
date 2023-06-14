@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-color: gray;
+			font-family:Arial, Helvetica, sans-serif ;
+		}
+		h1 {
+			margin-top: 50px;
+			font-size: 32px;
+			color: #2d2d2d;
+		}
+		form {
+			margin-top: 50px;
+			background-color: #ffffff;
+			border-radius: 5px;
+			padding: 20px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			width: 400px;
+			margin: auto;
+			border: solid blue 2px;
+			border-style: double;
+			background-color: #3495ab;
+			
+		}
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			border-radius: 3px;
+			
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			color: #2d2d2d;
+			border: solid blue 2px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #2d2d2d;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		button[type="submit"] {
+			background-color: rgb(134, 40, 210);
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-bottom: 20px;
+			border: solid blue 2px;
+		}
+		button[type="submit"]:hover {
+			background-color: #FF5733;
+		}
+		
+		p {
+			display: inline-block;
+			margin: 0;
+			color: #2d2d2d;
+			font-size: 16px;
+		}
+		h2 {
+   color: rgb(134, 134, 134);
+   font-weight: normal;
+   letter-spacing: 1px;
+   font-size: 11.5px;
+   width: 315px;
+   text-align: center;
+   border-top: 1px solid rgba(0, 0, 0, 0.1);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+   margin-bottom: 5px;
+}
+
+h2 span {
+    background:#fff;
+    padding:0 10px;
+}
+
+#createAccount{
+  margin-top: 30px;
+}
+
+#newAccount{
+  background: linear-gradient(#f6f7f9, #e7e9ec);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width:315px;
+  height:33px;
+  font-size:14px;
+  border: 0.5px solid #aaaaaa;
+  border-radius:3px;
+  border: solid blue 2px;
+}
+
+#newAccount:hover{
+  background: linear-gradient(#f5f6f8, #d9dce1);
+}
+	</style>
+</head>
+<body>
+	<center><h1>Login Page</h1></center>
+	<form action="index.html" id="myForm" >
+		<label> Username :</label>
+		<input id="inp" type="text" placeholder="Enter username" name="username" required>
+		<label>Password: </label>
+		<input type="password" placeholder="Enter password" name="password" required>
+		<button type="submit" onclick="varifypassword()">Login</button>
+		<a href="forgetpassword.html" style="display: inline-block; margin-left: 90px ;">Forgot Password?</a>
+		<script>
+			inp.minLength(20);
+		</script>
+		<script>
+			
+			function varifypassword() {
+				
+				let x = document.forms["myForm"]["username"].value;
+				let y = document.forms["myForm"]["password"].value;
+	
+			   
+	
+				if (x == "sahil" && y == 620281 ) {
+					alert("Successfull");
+					window.location.repalce("index.html")
+					
+	
+				} else {
+	
+					alert("Invalid..");
+					document.getElementById("myForm").reset();
+				}
+			}
+		</script>
+	</form>
+	<center>
+	<div id="createAccount">
+        <h2><span>Don't have an account?</span></h2>
+      <a href="registrationform.html"> <button id="newAccount" name="newAcct">Create your account</button></a> 
+      </div>
+	</center>
+</body>
+</html>

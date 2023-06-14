@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>login now </title>
+		<!--Link CSS-->
+		<Link href="css/login.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+	<header class="header">
+		
+        <h3>login now</h3>
+		<form class="login_form" action="method" method="post" name="form" onsubmit="return validated()">
+        <input type="email" name="email" placeholder="your email" class="box">
+		<div id="email_error">Please fill up your Email</div>
+        <input type="password" name="password" placeholder="your password" class="box">
+		<div id="pass_error">Please fill up your Password</div>
+        <p>forget your password <a href="forgetpassword.html">click here<a></p>
+		  <p>don't have an account <a href="registrationform.html">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+	</form>
+	</header>
+	<script src="valid.js"></script>
+	</body>
+</html>

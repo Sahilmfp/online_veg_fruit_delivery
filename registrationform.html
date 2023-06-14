@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+	
+	    <head>
+			<h1>Create account Form</h1>
+		</head>
+	
+
+	<body style="background-color: whitesmoke; text-align: center; margin: 20px;">
+			<font color="brown">
+		             <fieldset align="justify">
+			<!-- <font style="blue">
+				</font> -->
+				
+			<form action="loginuser.html" name="myForm" method="get" ectype="multipart/form-data">
+			<label >User name</lable>
+			<input type="text" name="name" placeholder="Enter your name">
+			</br></br>
+			
+			<label >Email    :</lable>
+			<input type="email" name="email" placeholder="Enter your ema">
+			</br></br>
+
+			<label >Password   :</lable>
+			<input type="pasword" name="paswordl" placeholder="Enter your possword">
+			</br></br>
+
+			<label >Phone    :</label>
+			<input type="number" name="Phone" placeholder="Enter your contect no.">
+			</br></br>
+
+			<label >Gender      :</lable>
+			<input type="radio" name="gender"  value="MALE" />MALE
+			<input type="radio" name="gender"  value="FEMALE" />FEMALE
+			<input type="radio" name="gender"  value="other" />Other
+			</br></br> 
+
+			
+
+			<label >country</label>
+			<select name="country">
+    			<option value=" "> select country</option>
+			<option value="india"> India</option>
+			<option value="india"> Nepal</option>
+			<option value="india"> China</option>
+			<option value="india"> Pakistan</option>
+			<option value="india"> Afganistan</option>
+			<option value="india"> Bhutan</option>
+			<option value="india"> USA</option>
+			<option value="india"> UAE</option>
+			<option value="india"> Kanada</option>
+			<option value="india"> Bangladesh</option>
+			</select>
+			</br></br>
+
+			<label> Addres </label>
+			<textarea name="address"></textarea>
+			</br></br>
+			
+			<button type="submit">submit</button>
+			
+			
+		   </form
+					 </fieldset>
+			</font>
+		
+			<script>
+				function validateForm() {
+					var name = document.forms["myForm"]["name"].value;
+					var email = document.forms["myForm"]["email"].value;
+					var password = document.forms["myForm"]["password"].value;
+					var phone = document.forms["myForm"]["phone"].value;
+					var gender = document.forms["myForm"]["gender"].value;
+					var country = document.forms["myForm"]["country"].value;
+					var address = document.forms["myForm"]["address"].value;
+		
+					
+		
+					if (name == "") {
+						alert("Name must be filled out");
+						return false;
+					}
+					if (email == "") {
+						alert("Email must be filled out");
+						return false;
+					}
+					if (password == "") {
+						alert("Password must be filled out");
+						return false;
+					}
+					if (phone == "") {
+						alert("Phone number must be filled out");
+						return false;
+					}
+					if (gender == "") {
+						alert("Please select your gender");
+						return false;
+					}
+					if (country == "") {
+						alert("Please select your country");
+						return false;
+					}
+					if (address == "") {
+						alert("Address must be filled out");
+						return false;
+					}
+		
+					
+				}
+			</script>
+		
+		</body>
+	</h3>
+</html>
